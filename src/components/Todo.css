@@ -1,0 +1,29 @@
+.style1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    color: #fefffb;
+    font-size: 60px;
+}
+
+.style2{
+    padding: 20px 30px;
+    background: #b0a3f5;
+    font-size: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.style3{
+    padding: 20px;
+    background: #fefffe;
+    width: 500px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    font-size: 20px;
+    color: #7b7b7b;
+}
