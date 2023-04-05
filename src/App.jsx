@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import React from 'react';
 import './App.css'
-import Home from "./components/Home";
-import Todo from "./components/Todo";
-import TodoPages from "./Pages/TodoPages"
+import TodoPages from "./Pages/TodoPages";
+import TodayPage from "./Pages/TodayPage";
+import HomePage from "./Pages/HomePage";
+import Calendar from "./Pages/Calendar";
+import { Route , Routes } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return(
-    <TodoPages />
+    <Routes>
+      <Route exect path='/' element={<HomePage />} />
+      <Route path='/todo' element={<TodoPages />} />
+      <Route path='/today' element={<TodayPage />} />
+      <Route path='/calendar' element={<Calendar />} />
+    </Routes>
   )
 }
 
-export default App
